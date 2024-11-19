@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Will</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index1.html">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="profile">
+                <img src="Ethan.jfif" alt="Profile Picture">
+                <h3>Ethan Will</h3>
+                <p>D.O.C: 28.04.2023</p>
+                <p>Status: <span class="status">Complete</span></p>
+                <a href="index1.html"><button onclick="goBack()">Back Home</button></a>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="header">
+                <button class="nav-btn">ADD Beneficiaries</button>
+                <button class="nav-btn">ADD Asset</button>
+                <button class="nav-btn">ADD Liability</button>
+                <button class="nav-btn">CREATE Links</button>
+                <button class="nav-btn">ADD Signatures</button>
+                <button class="nav-btn">Will Generation</button>
+            </div>
+            
+            <div id="contentSection">
+                <!-- Beneficiaries Table -->
+                <h2>Beneficiaries List</h2>
+                <table id="beneficiaryTable">
+                    <thead>
+                        <tr>
+                            <th>S. No</th>
+                            <th>Name</th>
+                            <th>Relationship</th>
+                            <th>Date of Birth</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Dynamic Rows will be added here -->
+                    </tbody>
+                </table>
+
+                <!-- Add New Beneficiary Form -->
+                <h2>Add New Beneficiary</h2>
+                <form id="beneficiaryForm">
+                    <label for="beneficiaryName">First Name</label>
+                    <input type="text" id="beneficiaryName" placeholder="Enter Name" required>
+
+                    <label for="relationship">Relationship</label>
+                    <input type="text" id="relationship" placeholder="Enter Relationship" required>
+
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" required>
+
+                    <button type="submit" class="submit-btn">Add Beneficiary</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="scirpt.js"></script>
+</body>
+</html>
+
+

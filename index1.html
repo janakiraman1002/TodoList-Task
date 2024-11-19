@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Will Dashboard</title>
+    <link rel="stylesheet" href="index1.css">
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/654adca185.js" crossorigin="anonymous"></script>
+    <!-- Header Section -->
+    <div class="header">
+        <div class="header-content">
+            <h1>My Will</h1>
+            <input type="text" class="search-box" placeholder="Search">
+            <div class="search-icons">
+                <i class="fa-solid fa-bell"></i>
+                <i class="fa-solid fa-gear"></i>
+                <i class="fa-solid fa-right-from-bracket"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="main-container">
+        <div class="welcome-section">
+            <h2>Good morning, Vinoth!</h2>
+            <p>Today is <span id="currentDate"></span></p>
+        </div>
+
+        <!-- Dashboard Content -->
+        <div class="dashboard">
+            <div class="left-panel">
+                <div class="profile-card">
+                    <img src="Ethan.jfif" alt="Profile Picture">
+                    <h3>Ethan Will</h3>
+                    <p>Date of Creation: 04/12/1988</p>
+                    <p>Status: <span class="status">Complete</span></p>
+                    <h2>₹ 2.5 Lakhs</h2>
+                    <p>Worth assets today</p>
+                </div>
+
+                <div class="statistics">
+                    <div class="stat-card">
+                        <h3>10</h3>
+                        <p>Active Assets</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>3</h3>
+                        <p>Active Liabilities</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>15</h3>
+                        <p>Active Beneficiaries</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>3</h3>
+                        <p>Active Signatories</p>
+                    </div>
+                </div>
+
+               <a href="index.html"><button class="add-btn">Add New Asset</button></a>
+                <button class="update-btn">Update Asset Value</button>
+            </div>
+
+            <div class="right-panel">
+                <h2>Signatory Will</h2>
+                <div class="signatory-list">
+                    <!-- Signatory Cards -->
+                    <div class="signatory-card">
+                        <img src="liam.jfif" alt="Signatory Picture">
+                        <h3>Liam</h3>
+                        <p>Witness</p>
+                        <p>Date: 28.04.2013</p>
+                        <p>Status: Complete</p>
+                    </div>
+                    <div class="signatory-card">
+                        <img src="liam.jfif" alt="Signatory Picture">
+                        <h3>Liam</h3>
+                        <p>Witness</p>
+                        <p>Date: 28.04.2013</p>
+                        <p>Status: Complete</p>
+                    </div>
+                    <div class="signatory-card">
+                        <img src="liam.jfif" alt="Signatory Picture">
+                        <h3>Liam</h3>
+                        <p>Witness</p>
+                        <p>Date: 28.04.2013</p>
+                        <p>Status: Complete</p>
+                    </div>
+                </div>
+                <button onclick="view()" class="view-invite-btn">View Invitations</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>
